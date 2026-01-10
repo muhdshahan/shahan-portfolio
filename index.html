@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Muhammed Shahan P P - Data Science & AI/ML Engineer.">
+  <meta name="author" content="Muhammed Shahan P P">
+  <link rel="icon" href="data:image/svg+xml,
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+    <text y='.9em' font-size='90'>🕵️‍♂️</text>
+    </svg>">
+  <title>Muhammed Shahan P P - Data Science & AI/ML Engineer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+    html,
+    body {
+      min-height: 100vh;
+      font-family: "Space Mono", monospace;
+      font-size: 1em;
+      max-width: 61rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 2rem;
+      background-color: #f4f4f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 150%;
+      font-weight: bold;
+      padding-top: 0.2em;
+      text-align: left;
+      color: #666;
+    }
+
+    .date {
+      color: #666;
+    }
+
+    .content {
+      margin-top: 4rem;
+      margin-bottom: 4/terraform destroyrem;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    header {
+      margin: 0 auto 3rem;
+      text-align: left;
+      width: 100%;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    .makka-pakka {
+      border-radius: 0.5rem;
+      position: absolute;
+      top: 4em;
+      right: 12%;
+      z-index: 1;
+      height: 20%;
+    }
+
+    @media (max-width: 640px) {
+      .makka-pakka {
+        display: none;
+      }
+    }
+
+    .bio-text p,
+    .extended-bio p {
+      font-size: 0.9rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+
+    #read-more,
+    #read-less {
+      color: #d1a54f;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #read-more:hover,
+    #read-less:hover {
+      color: #c28f42;
+    }
+
+    .extended-bio {
+      display: none;
+      margin-top: 0rem;
+    }
+
+    .bio-text {
+      max-width: 100%;
+      width: 100%;
+      padding-top: 1rem;
+    }
+
+    .bio-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .content,
+    .social-media,
+    ul {
+      padding: 1rem 0;
+    }
+
+    .bio-text-wrapper {
+      overflow: hidden;
+      max-height: 200px;
+      transition: max-height 0.3s ease-in-out;
+    }
+
+    .extended-bio-wrapper {
+      max-height: none;
+      overflow: visible;
+    }
+
+    .social-media {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .social-media ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+    }
+
+    .social-media ul li {
+      margin: 0 10px;
+    }
+
+    .social-media a {
+      font-size: 1.8rem;
+      color: #666;
+      text-decoration: none;
+    }
+
+    .social-media a:hover {
+      color: #d1a54f;
+    }
+
+    /* Tooltip Styling */
+    .tooltip {
+      position: relative;
+      cursor: pointer;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+
+    .tooltip::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 0.5rem;
+      border-radius: 0.3rem;
+      font-size: 0.8rem;
+      white-space: nowrap;
+      z-index: 10;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s ease, visibility 0.2s ease;
+    }
+
+    .tooltip:hover::after {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Skills Section Styling */
+    .skills-section {
+      margin: 2rem 0;
+    }
+
+    .skills-section h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-category {
+      position: relative;
+      font-weight: bold;
+      cursor: default;
+    }
+
+    .skill-category:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .skill-list {
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 0.5rem;
+    }
+
+    .projects-section h2 {
+      color: #666;
+      margin-bottom: -2rem;
+    }
+
+    /* Contributions and Accomplishments Styling */
+    .contrib-item,
+    .accomplish-item {
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="images/mario.gif" alt="Makka pakka saying hello" class="makka-pakka">
+  <div class="flex content">
+<header>
+  <span class="title">
+    Muhammed
+    <span class="tooltip" data-tooltip=" شَحْن / Shahan">Shahan</span>
+    P P
+  </span>
+  (<span class="tooltip" data-tooltip="github.com/muhdshahan">@muhdshahan</span>)
+
+  <p style="margin-bottom: 25px;">
+    Builder shaped by data and curiosity
+  </p>
+
+  <div class="bio-text">
+    <p>
+      Self-taught Data Scientist passionate about transforming raw data into actionable insights through machine learning and statistical modeling. I enjoy tackling complex problems by uncovering hidden patterns in data and building intelligent systems that can reason, predict, and assist decision-making. Constantly exploring new techniques in artificial intelligence, I focus on creating practical, data-driven solutions with real-world impact.
+      <span id="read-more">Read more</span>
+    </p>
+  </div>
+
+  <div class="extended-bio">
+    <p>
+      My journey began in Computer Science Engineering, where I initially explored web development, but my growing interest in data, machine learning, and problem-solving led me to pursue Data Science more deeply. Since then, I’ve worked extensively with machine learning models, LLMs, and agentic AI systems, applying them to domains like career guidance, interview preparation, analytics, and intelligent automation.
+    </p>
+
+    <p>
+      I enjoy building end-to-end systems that span data collection, modeling, deployment, and visualization using tools like FastAPI, LangChain, LangGraph, and modern ML frameworks. I’m particularly interested in agent-based systems, applied AI, and using data to drive meaningful insights rather than just predictions.
+    </p>
+
+    <p>
+      Outside of projects, I’m committed to continuous learning, experimenting with new ideas, and refining my understanding of AI systems that combine reasoning, data, and real-world constraints.
+    </p>
+
+    <span id="read-less">Read less</span>
+  </div>
+</header>
+
+
+    <!-- Skills Section -->
+    <div class="skills-section">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-grid">
+        <div>
+        <span class="skill-category">Languages</span>
+        <div class="skill-list">
+            Python, C, SQL (PostgreSQL, MySQL)
+        </div>
+        </div>
+
+        <div>
+        <span class="skill-category">AI / Machine Learning</span>
+        <div class="skill-list">
+            Machine Learning, Deep Learning, Transformers, Recommender Systems, RNN, CNN,
+            Time Series Forecasting, LLMs, RAG (Retrieval-Augmented Generation),
+            Bagging, Boosting
+        </div>
+        </div>
+
+        <div>
+        <span class="skill-category">LLM Ecosystem</span>
+        <div class="skill-list">
+            LangChain, Hugging Face, FAISS, Together AI, GROQ
+        </div>
+        </div>
+
+        <div>
+        <span class="skill-category">Agentic AI & Orchestration</span>
+        <div class="skill-list">
+            LangGraph, Multi-Agent Systems, Tool Calling, Intent Detection,
+            Agent Routing, Autonomous Agents, ReAct Pattern
+        </div>
+        </div>
+
+        <div>
+        <span class="skill-category">Frameworks</span>
+        <div class="skill-list">
+            TensorFlow, Keras, Scikit-learn, PyTorch, NLTK, Statsmodels, SciPy
+        </div>
+        </div>
+
+        <div>
+        <span class="skill-category">Web Development</span>
+        <div class="skill-list">
+            HTML, CSS, Django, FastAPI, Streamlit, REST APIs, Microservices
+        </div>
+        </div>
+
+        <div>
+        <span class="skill-category">Data Analysis & Visualization</span>
+        <div class="skill-list">
+            Pandas, NumPy, Seaborn, Matplotlib, Tableau, Power BI, Looker Studio
+        </div>
+        </div>
+
+        <div>
+        <span class="skill-category">MLOps & Deployment</span>
+        <div class="skill-list">
+            Git, MLflow, Docker, Kubernetes, CI/CD, GitHub Actions, Minikube
+        </div>
+        </div>
+
+        <div>
+        <span class="skill-category">Cloud & Data Engineering</span>
+        <div class="skill-list">
+            GCP, AWS, PySpark, Snowflake, Data Warehousing
+        </div>
+        </div>
+
+        <div>
+        <span class="skill-category">Systems & Tools</span>
+        <div class="skill-list">
+            Apache Airflow, Talend
+        </div>
+        </div>
+
+        <div>
+        <span class="skill-category">Core Concepts</span>
+        <div class="skill-list">
+            Mathematics, Statistics, DSA, OOPs, Problem Solving, GitHub
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="social-media">
+      <h2>know about me</h2>
+      <ul>
+        <li>
+          <a href="https://drive.google.com/file/d/1iJo7HecU0ul6a4_DaSbbAh0ZgfPmsgQF/view?usp=sharing" target="_blank">
+            <i class="fas fa-file-download"></i>
+          </a>
+        </li>
+        <li>
+        <a href="https://drive.google.com/file/d/1SsLqj-vVwmGd5bEr0cPeF5XJl--pVlMZ/view?usp=sharing" target="_blank" title="CV">
+            <i class="fas fa-file-lines"></i>
+        </a>
+        </li>
+        <li><a href="https://www.linkedin.com/in/muhammed-shahan-p-p/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/muhdshahan" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/shahan.kzd/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://x.com/muhdshahan5" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects-section">
+      <h2>Projects</h2>
+      <ul>
+      <h4>Main Project</h4>
+        <li>
+        <a href="https://github.com/maargha-ai/maargha-ai-platform">MaarghaAI</a>: Agentic personal growth and career guidance platform helping beginners navigate IT careers through personalized AI-driven learning, career prediction, roadmaps, and job preparation.
+        <span class="date">(December 2025 - Present)</span>
+        </li>
+      <h4>Group Projects</h4>
+        <li>
+        <a href="#">Trivox AI Interview Platform</a>: AI-powered mock interview system that simulates real interview experiences using reviewer-style questioning, audio-based interactions, automated scoring, and AI-generated feedback.
+        <span class="date">(Present)</span>
+        </li>
+
+        <li>
+        <a href="https://github.com/muhdshahan/customer_support_duo">Agentic AI Customer Support Platform</a>: Multi-agent AI customer support system with intelligent query routing for sales and technical assistance, built with autonomous agent orchestration and cloud deployment.
+        <span class="date">(October 2025)</span>
+        </li>
+      <h4>Mini AI Projects</h4>
+        <li>
+        <a href="https://github.com/muhdshahan/VELORA-AI_ML-Built-E-Commerce-Project">VELORA</a>: AI-driven luxury e-commerce platform with semantic search, sentiment analysis, personalized recommendations, customer segmentation, and sales forecasting.
+        <span class="date">(Novermber 2025)</span>
+        </li>
+
+        <li>
+        <a href="https://github.com/muhdshahan/Mask_AI-Abusive-Word-Masking-AI/tree/main">MaskAI</a>: AI-powered toxic text detection and masking API using BERT, exposing toxicity flags and masked outputs with CI/CD-enabled FastAPI deployment.
+        <span class="date">(September 2025)</span>
+        </li>
+
+        <li>
+        <a href="#">NewsGPT</a>: AI-powered news summarization and Q&A assistant built with a Retrieval-Augmented Generation (RAG) pipeline for contextual question answering.
+        <span class="date">(2024)</span>
+        </li>
+
+        <li>
+        <a href="#">AURA</a>: Emotion-aware music recommendation system that detects user emotions using a fine-tuned BERT model and delivers mood-aligned song suggestions.
+        <span class="date">(April 2024)</span>
+        </li>
+
+        <li>
+        <a href="#">Customer Insight Analyzer</a>: API-driven system that analyzes customer call transcripts by summarizing conversations and extracting sentiment using LLaMA-3.
+        <span class="date">(2024)</span>
+        </li>
+
+        <li>
+        <a href="https://muhdshahan-fliplyzer-time-series-forecasting-app-m33lyc.streamlit.app/">FLIPLYZER</a>: Time-series analytics dashboard for sales forecasting and anomaly detection to support data-driven inventory and sales decisions.
+        <span class="date">(May 2025)</span>
+        </li>
+
+        <li>
+        <a href="#">BOOKVANA</a>: Collaborative filtering-based book recommendation system delivering personalized suggestions using KNN.
+        <span class="date">(March 2025)</span>
+        </li>
+
+        <li>
+        <a href="#">Restaurant Planner (LangChain)</a>: Streamlit-based application generating restaurant names and menus using LangChain and Mistral-7B.
+        <span class="date">(2024)</span>
+        </li>
+      <h4>Data, BI & Analytics Projects</h4>
+        <li>
+        <a href="#">Amazon Sales Dashboard</a>: Interactive Tableau dashboard analyzing sales performance, revenue trends, regional insights, and shipping metrics.
+        <span class="date">(2022)</span>
+        </li>
+
+        <li>
+        <a href="#">Interactive Theatre Analysis</a>: Tableau dashboard visualizing theatre infrastructure, seating capacity, and regional distribution across Indian cities.
+        <span class="date">(2024)</span>
+        </li>
+
+        <li>
+        <a href="https://github.com/muhdshahan/Amazon-E-Commerce-Sales-Dashboard">Amazon E-Commerce Sales Dashboard</a>: Power BI dashboard analyzing sales, returns, and product trends across cities and categories.
+        <span class="date">(July 2025)</span>
+        </li>
+
+        <li>
+        <a href="#">Hospital Healthcare Dashboard</a>: Power BI dashboard using DAX to analyze patient data and improve hospital operations.
+        <span class="date">(2024)</span>
+        </li>
+
+        <li>
+        <a href="https://github.com/muhdshahan/HR-Analytics-Dashboard-for-Company-Atliq">HR Analytics Dashboard – AtliQ</a>: Interactive Power BI dashboard tracking attendance, WFH trends, and key HR KPIs.
+        <span class="date">(February 2025)</span>
+        </li>
+
+        <li>
+        <a href="#">Customer Churn Analysis Dashboard</a>: Power BI dashboard identifying churn trends among high-risk customer segments.
+        <span class="date">(2024)</span>
+        </li>
+
+        <li>
+        <a href="#">Car Garage Dashboard</a>: Power BI project visualizing car sales, services, and budget data to derive actionable business insights.
+        <span class="date">(2023)</span>
+        </li>
+      <h4>ML, Big Data & Cloud Projects</h4>
+        <li>
+        <a href="#">Health Insurance Estimator API</a>: Cloud-based ML API predicting insurance charges using linear regression, deployed on GCP with serverless infrastructure.
+        <span class="date">(2024)</span>
+        </li>
+
+        <li>
+        <a href="#">E-Commerce Purchase Prediction System</a>: Real-time purchase prediction system using PySpark and Streamlit based on user browsing behavior.
+        <span class="date">(2024)</span>
+        </li>
+
+        <li>
+        <a href="#">Customer Churn Spark System</a>: Real-time churn prediction system using PySpark and Random Forest with probability-based predictions.
+        <span class="date">(2024)</span>
+        </li>
+
+        <li>
+        <a href="https://github.com/muhdshahan/etl-pipeline-datafusion-airflow">ETL Data Pipeline on GCP</a>: Automated ETL pipeline using Apache Airflow and Cloud Data Fusion, loading processed data into BigQuery for analytics.
+        <span class="date">(March 2025)</span>
+        </li>
+
+        <li>
+        <a href="https://github.com/muhdshahan/DWBI-Project-using-Snowflake">Snowflake Data Warehousing & Power BI</a>: ETL pipeline with SQL transformations in Snowflake enabling real-time analytics via Power BI dashboards.
+        <span class="date">(May 2025)</span>
+        </li>
+      <h4>Systems, DevOps & Databases</h4>
+        <li>
+        <a href="#">Clothing Store Kubernetes Deployment</a>: Microservices-based e-commerce system deployed using Docker and Kubernetes with scalable architecture.
+        <span class="date">(2024)</span>
+        </li>
+
+        <li>
+        <a href="#">Clothing Factory Database</a>: Comprehensive PostgreSQL database design with ER modeling and Python-based analysis for business insights.
+        <span class="date">(2024)</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Open Source Contributions Section -->
+    <div>
+      <h2>Open Source Contributions</h2>
+      <ul>
+        <li>
+          <span class="contrib-item">
+            <a href="#">Nirvana</a>
+          </span>: Done
+          <span class="date">(October 2025)</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Accomplishments Section -->
+    <div>
+      <h2>Accomplishments</h2>
+      <ul>
+        <li>
+        <span class="accomplish-item">GATE Qualified</span>: Successfully qualified the Graduate Aptitude Test in Engineering (GATE), valid until March 2026.
+        </li>
+
+        <li>
+        <span class="accomplish-item">Best Performer Award</span>: Recognized as Best Performer among 2000+ students, four times at Brototype for consistent performance and dedication.
+        </li>
+
+        <li>
+        <span class="accomplish-item">Pro Presenter – Brototype Calicut Hub</span>: Awarded for delivering the best project presentation at the Calicut hub, demonstrating strong communication and technical articulation skills.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Demo Section -->
+    <div>
+      <h2>Project Demonstration</h2>
+      <ul>
+        <li>
+          <a href="https://youtu.be/K80438DtB5w?si=zBr04cR3TLGmGknA">JioSupportAssistant</a>:
+          Video demonstration for our hackathon group project
+          <span class="date">(October 2025)</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Documentation Section -->
+    <div>
+      <h2>Project Documentation</h2>
+      <ul>
+        <li>
+          <a href="https://drive.google.com/file/d/1P9wJtTle66-JyB2TakcB_BCzDo1CgXdX/view?usp=drive_link">JioSupportAssistant</a>:
+          Documention for our hackathon group project
+          <span class="date">(October 2025)</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Social Media Section -->
+  </div>
+
+  <script>
+    // Toggle Read More / Read Less functionality
+    const readMoreButton = document.getElementById('read-more');
+    const readLessButton = document.getElementById('read-less');
+    const extendedBio = document.querySelector('.extended-bio');
+
+    readMoreButton.addEventListener('click', function () {
+      extendedBio.style.display = 'block';
+      readMoreButton.style.display = 'none';
+      readLessButton.style.display = 'inline';
+    });
+
+    readLessButton.addEventListener('click', function () {
+      extendedBio.style.display = 'none';
+      readMoreButton.style.display = 'inline';
+      readLessButton.style.display = 'none';
+    });
+  </script>
+</body>
+
+</html>
